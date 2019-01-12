@@ -1,0 +1,121 @@
+
+///////////////////////////////////////////////////
+//logo
+.logo{
+     height:3.25rem;
+     margin-left: 3rem;
+ }
+
+
+ //////////////////////////////////////////////////
+ //Search box
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-Grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-Grey-light-3);
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color:var(--color-Grey-light-4)
+        }
+    }
+
+    &_input:focus + &_button:focus {
+        background-color: var(--color-Grey-light-3);
+    }
+
+    &_button {
+        border: none;
+        background-color: var(--color-Grey-light-2);
+        &:focus {
+            outline: none;
+
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &_icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-Grey-dark-1);
+    }
+}
+
+
+ /////////////////////////////////////////////////
+ //User Nav
+ .user-nav {
+     align-self: stretch;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     & > * {
+         padding: 0 2rem;
+         cursor: pointer;
+         height: 100%;
+     }
+
+     & > *:hover {
+        background-color: var(--color-Grey-light-2);
+     }
+     &_icon-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+     }
+
+     &_icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--color-Grey-dark-1);
+     }
+
+     &_notification {
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #fff;
+        position: absolute;
+        top:1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     &_user {
+        display: flex;
+        align-items: center;
+     }
+
+     &_user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &_user-name {
+
+    }
+ }
